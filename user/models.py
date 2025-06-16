@@ -1,5 +1,5 @@
-from core.constants.django import models    
-from core.constants.random import uuid
+from constants.django import models    
+from constants.random import uuid
 
 # Create your models here.
 class User(models.Model):

@@ -1,6 +1,4 @@
-from core.constants.django import HttpResponse
-# Create your views here.
+from constants.django import HttpResponse
 
-
-def hello(request):
+def createUser(request):
     return HttpResponse("Hello World")

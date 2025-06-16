@@ -1,8 +1,6 @@
-
-from django.contrib import admin
-from django.urls import path,include
-from .views import hello
+from constants.django import *
+from user.views import createUser
 
 urlpatterns = [
-    path("",hello),
+    path("createUser/",createUser),
 ]
