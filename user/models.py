@@ -3,8 +3,7 @@ from constants.random import uuid
 
 # Create your models here.
 class User(models.Model):
-    id = models.AutoField(primary_key=True,default=uuid.uuid4)
-    name = models.CharField(max_length=255)
+    id = models.UUIDField(primary_key=True,default=uuid.uuid4)
     first_name = models.CharField(max_length=255)
     last_name = models.CharField(max_length=255)
     phone = models.CharField(max_length=255)
@@ -14,7 +13,7 @@ class User(models.Model):
     zip_code = models.CharField(max_length=255)
     email = models.EmailField(max_length=50)
     password = models.CharField(max_length=255)
-    auth_token = models.CharField(max_length=255,default=None)
+    auth_token = models.TextField(default=None)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
